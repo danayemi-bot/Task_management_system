@@ -35,13 +35,6 @@ def add_tasks():
         print(f"Error: {err}")
 
 
-# demo
-final_tasks = add_tasks()
-if final_tasks:
-    print("Tasks added")
-    for i, task in enumerate(final_tasks, start=1):
-        print(f"{i}. {task.capitalize()}")
-
 
 # Added parameter name task_list so the function accepts an argument instead of relying on a global variable.
 def delete_tasks(task_list):
@@ -71,15 +64,6 @@ def delete_tasks(task_list):
         return task_list
     except Exception as err:
         print(f"Error: {err}")
-
-
-final_remaining_tasks = delete_tasks(final_tasks)
-if final_remaining_tasks:
-    print("Tasks Remained")
-    for i, task in enumerate(final_remaining_tasks, start=1):
-        print(f"{i}. {task.capitalize()}")
-
-
 
 
 
